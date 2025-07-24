@@ -125,6 +125,34 @@ fun ArticleImageTutorial(modifier: Modifier = Modifier){
     }
 }
 
+@Composable
+fun TaskManager(modifier: Modifier = Modifier){
+    val image = painterResource(R.drawable.ic_task_completed)
+
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+        modifier = modifier.fillMaxWidth().fillMaxHeight()
+
+    ) {
+        Image(
+            painter = image,
+            contentDescription = null,
+
+        )
+        Text(
+            text = "All tasks completed",
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
+        )
+        Text(
+            text = "Nice work!",
+            fontSize = 16.sp
+        )
+
+    }
+}
+
 
 @Preview(
     showBackground = true,
@@ -137,6 +165,7 @@ fun BirthdayCardPreview() {
         GreetingImage("ไออ้วนไอสัส", "อ้วนตะวัน")
     }
 }
+
 @Preview(
     showBackground = true,
     showSystemUi = true
@@ -145,5 +174,17 @@ fun BirthdayCardPreview() {
 fun ComposeArticlePreview(){
     MyFirstApplicationTheme {
         ArticleImageTutorial()
+    }
+}
+
+@Preview(
+    showBackground = true,
+    showSystemUi = true
+)
+@Composable
+fun TaskManagerPreview(){
+    MyFirstApplicationTheme {
+        TaskManager()
+
     }
 }
