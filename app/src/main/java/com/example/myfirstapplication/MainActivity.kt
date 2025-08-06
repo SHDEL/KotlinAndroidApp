@@ -48,7 +48,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ArticleImageTutorial()
+//                    GreetingImage("Happy Birthday Na!", "Del")
+//                    ArticleImageTutorial()
+//                    ComposeQuadrant()
                 }
 
             }
@@ -155,7 +157,7 @@ fun TaskManager(modifier: Modifier = Modifier){
 @Composable
 fun ComposeQuadrant(modifier: Modifier = Modifier){
     Column (
-        modifier = modifier.fillMaxWidth()
+        Modifier.fillMaxWidth()
 
     ) {
         Row(Modifier.weight(1f)) {
