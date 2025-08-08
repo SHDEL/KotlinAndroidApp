@@ -65,7 +65,7 @@ fun GreetingText(message: String, from: String,  modifier: Modifier = Modifier){
         verticalArrangement = Arrangement.Center,
         modifier = modifier
     )
-         {
+    {
         Text(
             text = message,
             fontSize = 80.sp,
@@ -141,7 +141,7 @@ fun TaskManager(modifier: Modifier = Modifier){
             painter = image,
             contentDescription = null,
 
-        )
+            )
         Text(
             text = "All tasks completed",
             fontWeight = FontWeight.Bold,
